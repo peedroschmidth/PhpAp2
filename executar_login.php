@@ -2,7 +2,7 @@
 $login = $_POST['login_usuario'];
 $senha = $_POST['senha_usuario'];
 
-$conn = new PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS;ConnectionPooling=0","","root");
+$conn = new PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS;ConnectionPooling=0","sa","root");
 
 $stmt = $conn->query("SELECT count(*) as num FROM tb_usuarios where login='$login' and senha='$senha'");
 $stmt->execute();
