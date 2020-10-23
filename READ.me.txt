@@ -1,0 +1,3 @@
+-> Projeto feito com fins educacionais.
+-> PDO conforme o professor solicitou.
+-> Pedro Henrique Schmidt - ULBRA - Computação
