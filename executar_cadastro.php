@@ -1,6 +1,6 @@
 <?php 
 
-PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS;ConnectionPooling=0","sa","root");
+$conn = new PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS;ConnectionPooling=0","sa","root");
 
 $login= $_POST['login_usuario'];
 $senha = $_POST['senha_usuario'];

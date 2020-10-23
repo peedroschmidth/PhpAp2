@@ -1,7 +1,7 @@
 <?php
 try
 {
-	PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS;ConnectionPooling=0","sa","root");
+	$conn = new PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS;ConnectionPooling=0","sa","root");
     echo "Conectado";
 	echo "<br>---------------<br>";
 }
